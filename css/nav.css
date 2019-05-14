@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    transition: all 300ms 50ms linear;
+}
+
+section {
+    min-height: 100vh;
+    /* Мінімальна висота секцій 100% від висоти viewport */
+    padding: 0px 0;
+    /* Внутрішні відступи для секцій */
+}
+
+.container {
+    width: 80%;
+    /* Ширина контейнера відносно ширини батьківського елемента */
+    max-width: 1600px;
+    /* Обмеження максимальної ширини */
+    margin: auto;
+    /* Центрування по-горизонталі */
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+nav {
+    background-color: none;
+    position: fixed;
+    min-height: 70px;
+    max-height: 70px;
+    overflow: hidden;
+    width: 30%;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 99;
+}
+
+nav.open-nav {
+    max-height: 100vh;
+    background-color: rgba(50, 50, 50, 0.93);
+}
+
+nav.open-nav .navbar {
+    display: block;
+}
+
+.sticky {
+    position: fixed;
+    opacity: 1;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+}
+
+nav ul li {
+    margin: 0 1 1 5rem;
+    line-height: 1.5;
+}
+nav ul li:first-child {
+    margin: 3rem 0rem 2rem 0rem;
+}
+
+nav ul a {
+    color: hotpink;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+nav ul a.active {
+    color: #FF8833;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 200ms ease-in;
+}
+
+nav .navbar {
+    display: none;
+}
+
+.nav-toggle {
+    display: block;
+}
+
+nav ul {
+    flex-direction: column;
+    text-align: right;
+    padding: 40px 0 0 0;
+}
+
+nav ul li {
+    margin-bottom: 2rem;
+}
+#s2, #s3 {
+    
+    background-color: black;
+
+
+}
+#img {z-index: 9999;}
